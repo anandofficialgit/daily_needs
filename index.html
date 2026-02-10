@@ -1,26 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Beauty Best Buys</title>
-    <meta name="description" content="Beauty Best Buys - Find the best beauty products and deals" />
-    <meta name="author" content="Beauty Best Buys" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Essentials Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DailyNeeds</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li id="cart-counter">Cart (0)</li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Beauty Best Buys" />
-    <meta property="og:description" content="Beauty Best Buys - Find the best beauty products and deals" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <main>
+        <section class="hero">
+            <h1>Fresh Essentials, Delivered.</h1>
+            <p>Your daily grocery and household needs in one place.</p>
+        </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@BeautyBestBuys" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <section id="product-list" class="product-grid">
+            <!-- Products will be injected here by script.js -->
+        </section>
+    </main>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <footer>
+        <p>&copy; 2026 DailyNeeds E-Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
